@@ -1,0 +1,46 @@
+#Parameters of experiment
+#Time is in milliseconds
+#startFragment=http://ec2-52-39-116-115.us-west-2.compute.amazonaws.com/dbpedia
+#startFragment='http://52.39.116.115/'
+startFragment='http://curiosiphi.lina.sciences.univ-nantes.prive/'
+#startFragment='http://127.0.0.1:5000/'
+lastServer=3737
+timeoutHTTPQuery=120000
+#timeShuffleTables=10000
+timeShuffleTables=30000
+#nbClient=(50)
+nbClient=(50)
+# possible value bsbm1, bsbm10 bsmbm100
+#datasets=('bsbm1' 'bsbm10' 'bsbm100')
+#For DBpedia nbRound = nbHour
+datasets=('dbpedia_3_8')
+#queriesFolder=/home/montoya/queryLog/dbpedia_3_8/20h/queryFiles
+queriesFolder=/home/montoya/tmp/queries_dbpedia_3_8
+nbWarmUpRound=1
+nbRealRound=1
+# 10, 50, 100, 150, 200
+# 4 6 7 7 8
+nbRandomPeer=21
+# 9 15 20 25 30
+nbClusterPeer=0
+sizeCache=1000
+cyclade=off
+delegate=off
+ranking=off
+# each factor clients are loaded with its queries and the queries from predecent clients
+# for example a factor of 2, includes in the workload of client 2 the queries of clients 1 and 2; in the workload of client 4 the queries of clients 3 and 4; etc. Use the nbClient to have only one loaded client, use 2 to have half of the clients loaded
+factor=50
+maxSelectedNeighbors=10
+kprofile=10
+# if value is X, clients with X queries or less will execute all their queries by themselves
+#thresholdDelegate=0
+# TTL number of hop a query can do for delegation
+ttl=3
+timeoutLookupNeighbourhood=100
+timeAskDelegate=100
+# 5 min
+timePerformQuery=300000
+#timePerformQuery=120000
+#INFO or DEBUG or just ERROR
+verbose='ERROR'
+

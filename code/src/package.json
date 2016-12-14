@@ -1,0 +1,33 @@
+{
+  "name": "ladda",
+  "version": "1.0.0",
+  "description": "Delegation of queries",
+  "main": "node.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfolz/delegateQuery.git"
+  },
+  "author": "Pauline Folz and Gabriela Montoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfolz/delegateQuery/issues"
+  },
+  "homepage": "https://github.com/pfolz/delegateQuery#readme",
+  "dependencies": {
+    "fifo": "^2.3.0",
+    "freeport": "^1.0.5",
+    "fs": "0.0.2",
+    "hashmap": "^2.0.6",
+    "mkdirp": "^0.5.1",
+    "node-uuid": "^1.4.7",
+    "properties-reader": "0.0.15",
+    "random-js": "^1.0.8",
+    "socket.io": "^1.4.6",
+    "sparqljs": "^1.1.4"
+  }
+}
