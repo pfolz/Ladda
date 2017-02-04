@@ -7,9 +7,28 @@ Ladda implements a dynamic load-balancer that enables inter-query parallelism ov
 
 This repo expose the benchmark code, queries and plots.
 
+# Online Demo
+
+An online demo of query delegation through browser in a federation of linked data consumers is available at:
+http://foglet-examples.herokuapp.com/sparqlDistribution 
+
+This demo require browsers able to handle WebRTC connections, such as Firefox or Chrome.
+
+The figure bellow is a screenshot of the demo.
+
+![Alt text](/plots/fogletNDP_screen_legend.png?raw=true)
+
+1. Endpoint where the query will be send
+2. Number of neighbors choose randomly to delegate queries
+3. List of queries to be executed
+4. Click on the send button to execute the queries
+5. This button appear when all the queries are executed, it gives metadata about the execution of the queries
+6. Show the results of the queries and where they were executed
+7. Logs of the clients. I display execution of client's queries and delegated queries executed for neighbors.
+
 # Plots
 
-### [Longest Processing Time (LPT) allocation - 1 run](https://github.com/pfolz/Ladda/blob/master/plots/staticAllocation_1run.pdf)
+### [Longest Processing Time (LPT) allocation - 1 run](https://github.com/pfolz/Ladda/blob/master//plots/staticAllocation_1run.pdf)
 
   Execution time of 1509 queries from DBPedia log 3.8, statically allocated to 1,
   21 and 50 TPF clients. TPF server is configured with 1, 4 and 8 workers.
