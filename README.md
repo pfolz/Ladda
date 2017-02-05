@@ -38,15 +38,15 @@ The figure bellow is a screenshot of the demo.
   Regardless the configuration, the TPF server handle less calls with Ladda 2 (L2) than No Delegation (ND), i.e., the Web 
   cache is more efficient when queries are parallelized. Bellow is a table with the precise numbers.
   
-  Configuration | Approach | TPF server's calls | Total external calls (1)
-  --------------|----------|--------------------|----------------------
-  All Loaded | ND | 623161 | 703823
-             | L2 | 534841 | 705664
-  Half Loaded | ND | 630842 | 704083
-              | L2 | 558738 | 706788
-  One Loaded | ND | 704415 | 705458
-             | L2 | 563831 | 707932
-             
+  Configuration | Approach | TPF server's calls | Total external calls (1) | Makespan
+  --------------|----------|--------------------|--------------------------|---------
+  All Loaded | ND | 623161 | 703823 | ~ 9 min 31 sec
+             | L2 | 534841 | 705664 | ~ 5 min
+  Half Loaded | ND | 630842 | 704083 | ~ 10 min
+              | L2 | 558738 | 706788 | ~ 5 min
+  One Loaded | ND | 704415 | 705458 | ~ 35 min 25 sec
+             | L2 | 563831 | 707932 | ~ 4 min
+             
  (1) This sum do not take into consideration calls resolved in the local cache of clients.
 
 ### Experiment on the local cache of TPF client
