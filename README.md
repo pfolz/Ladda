@@ -18,13 +18,13 @@ The figure bellow is a screenshot of the demo.
 
 ![Alt text](/plots/fogletNDP_screen_legend.png?raw=true)
 
-1. Endpoint where the query will be send
+1. Endpoint where the queries will be send
 2. Number of neighbors choose randomly to delegate queries
 3. List of queries to be executed
 4. Click on the send button to execute the queries
 5. This button appear when all the queries are executed, it gives metadata about the execution of the queries
 6. Show the results of the queries and where they were executed
-7. Logs of the clients. I display execution of client's queries and delegated queries executed for neighbors.
+7. Logs of the clients. It display execution of client's queries and delegated queries executed for neighbors.
 
 # Plots
 
