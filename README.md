@@ -28,10 +28,15 @@ The figure bellow is a screenshot of the demo.
 
 # Plots
 
-### [Longest Processing Time (LPT) allocation - 1 run](https://github.com/pfolz/Ladda/blob/master//plots/staticAllocation_1run.pdf)
+### [Longest Processing Time (LPT) allocation - 1 run](https://github.com/pfolz/Ladda/blob/master/plots/staticAllocation_1run.pdf)
 
   Execution time of 1509 queries from DBPedia log 3.8, statically allocated to 1,
   21 and 50 TPF clients. TPF server is configured with 1, 4 and 8 workers.
+  
+### [Number of calls resolved by the TPF server - 1 run] (https://github.com/pfolz/Ladda/blob/master/plots/nbCallsServer.pdf)
+
+  Regardless the configuration, the TPF server handle less calls with Ladda 2 (L2) than No Delegation (ND), i.e., the Web 
+  cache is more efficient when queries are parallelized.
 
 ### Experiment on the local cache of TPF client
 
