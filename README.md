@@ -5,14 +5,16 @@ where data consumers are connected together, share their SPARQL processing capab
 and parallelize their queries by delegating them to idle data consumers. 
 Ladda implements a dynamic load-balancer that enables inter-query parallelism over TPF clients.
 
-This repo expose the benchmark code, queries and plots.
+This repo exposes the benchmark code, queries and plots.
 
 # Online Demo
 
 An online demo of query delegation through browser in a federation of linked data consumers is available at:
 http://foglet-examples.herokuapp.com/sparqlDistribution 
 
-This demo require browsers able to handle WebRTC connections, such as Firefox or Chrome.
+This demo requires browsers able to handle WebRTC connections, such as Firefox or Chrome.
+
+You need to open at least two tabs in your browser in order to delegate queries.
 
 The figure bellow is a screenshot of the demo.
 
@@ -22,7 +24,7 @@ The figure bellow is a screenshot of the demo.
 2. Number of neighbors choose randomly to delegate queries
 3. List of queries to be executed
 4. Click on the send button to execute the queries
-5. This button appear when all the queries are executed, it gives metadata about the execution of the queries
+5. This button appears when all the queries are executed, it gives metadata about the execution of the queries
 6. Show the results of the queries and where they were executed
 7. Logs of the clients. It display execution of client's queries and delegated queries executed for neighbors.
 
