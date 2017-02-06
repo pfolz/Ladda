@@ -26,7 +26,7 @@ The figure bellow is a screenshot of the demo.
 4. Click on the send button to execute the queries
 5. This button appears when all the queries are executed, it gives metadata about the execution of the queries
 6. Show the results of the queries and where they were executed
-7. Logs of the clients. It display execution of client's queries and delegated queries executed for neighbors.
+7. Logs of the clients. It display execution of client's queries and delegated queries executed for neighbors. Beware, results are shown as soon as they are received, i.e., they do not necessecarily follow order of queries execution.
 
 # Plots
 
